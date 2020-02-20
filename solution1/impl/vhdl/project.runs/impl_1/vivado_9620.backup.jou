@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Thu Feb 20 11:22:55 2020
+# Process ID: 9620
+# Current directory: C:/Users/Linda/Documents/AK_1_CS_FerlindaFeliana_HLS/solution1/impl/vhdl/project.runs/impl_1
+# Command line: vivado.exe -log xor_bit.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source xor_bit.tcl -notrace
+# Log file: C:/Users/Linda/Documents/AK_1_CS_FerlindaFeliana_HLS/solution1/impl/vhdl/project.runs/impl_1/xor_bit.vdi
+# Journal file: C:/Users/Linda/Documents/AK_1_CS_FerlindaFeliana_HLS/solution1/impl/vhdl/project.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source xor_bit.tcl -notrace

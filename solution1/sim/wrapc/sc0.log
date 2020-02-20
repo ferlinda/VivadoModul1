@@ -1,0 +1,29 @@
+   Build using "C:/Xilinx/Vivado_HLS/2016.4/msys/bin/g++.exe"
+   Compiling apatb_xor_bit.cpp
+   Compiling (apcc) xorBit.c_pre.c.tb.c
+INFO: [HLS 200-10] Running 'c:/Xilinx/Vivado_HLS/2016.4/bin/unwrapped/win64.o/apcc.exe'
+INFO: [HLS 200-10] For user 'Linda' on host 'desktop-ra719fn' (Windows NT_amd64 version 6.2) on Thu Feb 20 10:36:19 +0700 2020
+INFO: [HLS 200-10] In directory 'C:/Users/Linda/Documents/AK_1_CS_FerlindaFeliana_HLS/solution1/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is apcc_db
+INFO: [APCC 202-1] APCC is done.
+   Compiling (apcc) xorBit_test.c_pre.c.tb.c
+INFO: [HLS 200-10] Running 'c:/Xilinx/Vivado_HLS/2016.4/bin/unwrapped/win64.o/apcc.exe'
+INFO: [HLS 200-10] For user 'Linda' on host 'desktop-ra719fn' (Windows NT_amd64 version 6.2) on Thu Feb 20 10:36:28 +0700 2020
+INFO: [HLS 200-10] In directory 'C:/Users/Linda/Documents/AK_1_CS_FerlindaFeliana_HLS/solution1/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+C:/Users/Linda/Documents/AK_1_CS_FerlindaFeliana_HLS/xorBit_test.c:7:8: warning: incompatible pointer types passing 'uint4 **' to parameter of type 'uint4 *'; remove & [-Wincompatible-pointer-types]
+(a, b, &c);
+       ^~
+./apatb_xor_bit.h:10:8: note: passing argument to parameter 'out' here
+uint4* out);
+       ^
+C:/Users/Linda/Documents/AK_1_CS_FerlindaFeliana_HLS/xorBit_test.c:8:11: warning: format specifies type 'int' but the argument has type 'uint4 *' [-Wformat]
+ printf("%d", c);
+         ~^   ~
+2 warnings generated.
+INFO: [APCC 202-3] Tmp directory is apcc_db
+INFO: [APCC 202-1] APCC is done.
+   Generating cosim.tv.exe

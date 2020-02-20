@@ -1,0 +1,1 @@
+set ::AESL_AUTOSIM::gTopFileName xorBit.c_pre.c.tb.c

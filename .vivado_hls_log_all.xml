@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [SYN 201-107] Renaming port name 'xor_bit/out' to 'xor_bit/out_r' to avoid the conflict with HDL keywords or other object names." projectName="AK_1_CS_FerlindaFeliana_HLS" solutionName="solution1" date="2020-02-20T10:33:06.980+0700" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog>
+        <logs message="WARNING: [IMPL 213-201] IO timing constraints are not applied without adding IO buffers.&#xD;&#xA;" projectName="AK_1_CS_FerlindaFeliana_HLS" solutionName="solution1" date="2020-02-20T10:57:03.818+0700" type="Warning"/>
+        <logs message="WARNING: [IMPL 213-201] IO timing constraints are not applied without adding IO buffers." projectName="AK_1_CS_FerlindaFeliana_HLS" solutionName="solution1" date="2020-02-20T10:56:25.423+0700" type="Warning"/>
+        <logs message="WARNING: [IMPL 213-201] IO timing constraints are not applied without adding IO buffers.&#xD;&#xA;" projectName="AK_1_CS_FerlindaFeliana_HLS" solutionName="solution1" date="2020-02-20T10:41:09.731+0700" type="Warning"/>
+        <logs message="WARNING: [IMPL 213-201] IO timing constraints are not applied without adding IO buffers." projectName="AK_1_CS_FerlindaFeliana_HLS" solutionName="solution1" date="2020-02-20T10:40:34.975+0700" type="Warning"/>
+      </packageLog>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

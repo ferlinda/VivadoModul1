@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="xorBit.c" path="C:\Users\Linda\Documents\AK_1_CS_FerlindaFeliana_HLS\xorBit.c"/>
+    <originFiles name="xorBit.h" path="C:\Users\Linda\Documents\AK_1_CS_FerlindaFeliana_HLS\xorBit.h"/>
+  </source>
+  <testbench>
+    <originFiles name="xorBit_test.c" path="C:\Users\Linda\Documents\AK_1_CS_FerlindaFeliana_HLS\xorBit_test.c"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

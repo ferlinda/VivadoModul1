@@ -1,0 +1,132 @@
+
+
+================================================================
+== Vivado HLS Report for 'xor_bit'
+================================================================
+* Date:           Thu Feb 20 10:33:07 2020
+
+* Version:        2016.4 (Build 1756540 on Mon Jan 23 19:31:01 MST 2017)
+* Project:        AK_1_CS_FerlindaFeliana_HLS
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z010clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|      1.37|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    0|    0|    1|    1|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 0
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states: 1
+* Pipeline: 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+* FSM state operations: 
+
+ <State 1>: 1.37ns
+ST_1: StgValue_2 (4)  [1/1] 0.00ns
+:0  call void (...)* @_ssdm_op_SpecBitsMap(i4 %in1) nounwind, !map !7
+
+ST_1: StgValue_3 (5)  [1/1] 0.00ns
+:1  call void (...)* @_ssdm_op_SpecBitsMap(i4 %in2) nounwind, !map !13
+
+ST_1: StgValue_4 (6)  [1/1] 0.00ns
+:2  call void (...)* @_ssdm_op_SpecBitsMap(i4* %out_r) nounwind, !map !17
+
+ST_1: StgValue_5 (7)  [1/1] 0.00ns
+:3  call void (...)* @_ssdm_op_SpecTopModule([8 x i8]* @xor_bit_str) nounwind
+
+ST_1: in2_read (8)  [1/1] 0.00ns
+:4  %in2_read = call i4 @_ssdm_op_Read.ap_auto.i4(i4 %in2) nounwind
+
+ST_1: in1_read (9)  [1/1] 0.00ns
+:5  %in1_read = call i4 @_ssdm_op_Read.ap_auto.i4(i4 %in1) nounwind
+
+ST_1: out_assign (10)  [1/1] 1.37ns  loc: AK_1_CS_FerlindaFeliana_HLS/xorBit.c:4
+:6  %out_assign = xor i4 %in2_read, %in1_read
+
+ST_1: StgValue_9 (11)  [1/1] 0.00ns  loc: AK_1_CS_FerlindaFeliana_HLS/xorBit.c:4
+:7  call void @_ssdm_op_Write.ap_auto.i4P(i4* %out_r, i4 %out_assign) nounwind
+
+ST_1: StgValue_10 (12)  [1/1] 0.00ns  loc: AK_1_CS_FerlindaFeliana_HLS/xorBit.c:4
+:8  ret void
+
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 1.37ns
+The critical path consists of the following:
+	wire read on port 'in2' [8]  (0 ns)
+	'xor' operation ('out_assign', AK_1_CS_FerlindaFeliana_HLS/xorBit.c:4) [10]  (1.37 ns)
+	wire write on port 'out_r' (AK_1_CS_FerlindaFeliana_HLS/xorBit.c:4) [11]  (0 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A
